@@ -1,0 +1,64 @@
+<!--
+Program name: thankyou.html
+Author: Mikaeel Nagri
+Date created: 06/16/2026
+Date last edited: 06/18/2026
+Version: 1.0
+Description: Confirmation page shown after a patient submits the
+registration form on patient-form.html. Reuses the same banner, footer,
+and CSS as the main page for a consistent look.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeR Docs Medical - Thank You</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===================== BANNER / HEADER SECTION ===================== -->
+<div id="banner">
+    <div id="bannerLeft">
+        <img id="logo" src="logo.png" alt="WeR Docs Medical Logo">
+        <div>
+            <h1>WeR Docs Medical</h1>
+            <div class="tagline">Patient Registration Portal</div>
+        </div>
+    </div>
+    <div id="dateDisplay">
+        Today is: <script>
+            var today = new Date();
+            var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            document.write(days[today.getDay()] + ", " + months[today.getMonth()] + " " + today.getDate() + ", " + today.getFullYear());
+        </script>
+    </div>
+</div>
+
+<!-- ===================== MAIN CONTENT SECTION ===================== -->
+<div id="mainContent">
+    <h2>Thank You</h2>
+    <p class="formIntro">Thank you for your submission.</p>
+</div>
+
+<!-- ===================== FOOTER SECTION ===================== -->
+<div id="footer">
+    <div>
+        WeR Docs Medical<br>
+        PO BOX 18881<br>
+        Sugar Land, TX 77496
+    </div>
+    <div>
+        <button type="button" onclick="alert('Contact us at: contact@werdocsmedical.example.com')">Contact Us</button>
+    </div>
+    <div class="socialLinks">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+</div>
+
+</body>
+</html>
+<!-- END OF thankyou.html -->
